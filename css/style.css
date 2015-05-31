@@ -1,0 +1,223 @@
+@font-face {
+  font-family: 'montserrat';
+  src:  url('../fonts/Montserrat-Bold.otf') format('ttf');
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src:  url('../fonts/Montserrat-Light.otf') format('ttf');
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/Montserrat-Regular.otf') format('ttf');
+}
+
+body {
+  font-family: 'montserrat', sans-serif;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+.rectangle {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+}
+
+#top-left {
+  top: 0;
+  left: 0;
+}
+
+#top-right {
+  top: 0;
+  right: 0;
+}
+
+#bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+#bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+.circle {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  border-radius: 180px;
+  z-index: 2;
+}
+
+.under {
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow:    0px 0px 30px 0px rgba(50, 50, 50, 0.3);
+  box-shadow:         0px 0px 30px 0px rgba(50, 50, 50, 0.3);
+  background-color: #fff;
+  z-index: 1;
+  width: 298px;
+  height: 298px;
+}
+
+#score, #color, #type, #title, #play {
+  margin: 0;
+}
+
+#color, #play {
+  font-size: 38px;
+  line-height: 300px;
+  border-radius: 180px;
+}
+
+#play {
+  color: #616161;
+  font-size: 46px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  text-align: right;
+}
+
+header div {
+  margin: 8px 10px 0px 0px;
+}
+
+header span {
+  font-size: 22px;
+  color: #fff;
+}
+
+#score {
+  font-size: 24px;
+  color: #fff;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+header h1 {
+  position: absolute;
+  left: 10px;
+  font-size: 32px;
+  color: #fff;
+  margin: 0;
+  font-weight: normal;
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+footer span {
+  font-size: 18px;
+  color: #fff;
+}
+
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: normal;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ececec;
+}
+
+.circle > svg {
+  width: 100%;
+  display: block;
+}
+
+#center-box {
+  height: 300px;
+  width: 600px;
+  border-radius: 25px;
+  background-color: #fff;
+  text-align: center;
+}
+
+#center-box h3 {
+  margin-top: 40px;
+  font-size: 84px;
+  color: #2d2d2d;
+  font-weight: 600;
+  margin: 0;
+}
+
+#center-box span, #center-box #score-gameover {
+  font-size: 28px;
+  color: #b6b6b6;
+  display: inline;
+  line-height: 35px;
+  font-weight: lighter;
+}
+
+#share {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  bottom: 75px;
+  left: 0px;
+}
+
+#share img {
+  width: 64px;
+  margin: 8px 20px 8px 0px;
+  border: 0;
+  box-shadow: 0;
+  display: inline;
+}
+
+#center-box #container {
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-top: #e5e5e5 1px solid;
+}
+
+#play-again {
+  text-align: center;
+  color: #2d2d2d;
+  font-size: 22px;
+  line-height: 60px;
+  font-weight: lighter;
+  cursor: pointer;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+#play-again:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.4s;
+}
+
+.hidden {
+  display: none;
+}
+
+.center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
